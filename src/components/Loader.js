@@ -1,5 +1,6 @@
 import React from 'react';
-import {Box, Button, Container, Grid} from "@material-ui/core";
+import {Button, Container, Grid} from "@material-ui/core";
+import Box from "@material-ui/core/Box";
 
 const Loader = () => {
     return (
@@ -12,6 +13,7 @@ const Loader = () => {
                       container
                       aliggnItems={'center'}
                       direction={'column'}>
+                    <div className="lds-hourglass"></div>
                 </Grid>
             </Grid>
         </Container>
